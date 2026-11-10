@@ -96,6 +96,4 @@ ICBT Campus, Sri Lanka
 
 GitHub: https://github.com/ragavan-janoyan
 
-⸻
-
 ⭐ Thank you for visiting my MedicareLK project!
