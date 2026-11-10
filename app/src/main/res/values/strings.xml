@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MedicareLK</string>
+    <string-array name="gender_options">
+        <item>Select gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+</resources>

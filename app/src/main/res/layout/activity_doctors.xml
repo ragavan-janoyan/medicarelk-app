@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorsActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="411dp"
+        android:layout_height="69dp"
+        android:fontFamily="serif"
+        android:text="Find a Doctor"
+        android:textAlignment="center"
+        android:textColor="#1976D2"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <SearchView
+        android:id="@+id/etSearchDoctors"
+        android:layout_width="375dp"
+        android:layout_height="40dp"
+        android:background="#D6DDE2"
+        android:backgroundTint="#E3F2FD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <LinearLayout
+        android:id="@+id/doctorCard1"
+        android:layout_width="226dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="12dp"
+        android:background="#00BCD4"
+        android:backgroundTint="#E3F2FD"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/etSearchDoctors"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etSearchDoctors"
+        app:layout_constraintTop_toBottomOf="@+id/etSearchDoctors">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:fontFamily="serif"
+            android:text="Dr. Nimali Perera"
+            android:textColor="#0D1B2A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Cardiologist | Colombo"
+            android:textColor="#0D1B2A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:fontFamily="serif"
+            android:text="Daily - 5:30 PM"
+            android:textColor="#0D1B2A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="LKR 2,000 "
+            android:textColor="#0D1B2A"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBookDoctor1"
+        android:layout_width="115dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:backgroundTint="#1976D2"
+        android:fontFamily="serif"
+        android:text="BOOK"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="30px"
+        app:layout_constraintBottom_toBottomOf="@+id/doctorCard1"
+        app:layout_constraintStart_toEndOf="@+id/doctorCard1"
+        app:layout_constraintTop_toTopOf="@+id/doctorCard1"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <LinearLayout
+        android:id="@+id/doctorCard2"
+        android:layout_width="226dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="8dp"
+        android:background="#8B98A2"
+        android:backgroundTint="#E3F2FD"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/doctorCard1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/doctorCard1"
+        app:layout_constraintTop_toBottomOf="@+id/doctorCard1">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Mr. Kasun Ferando"
+            android:textColor="#0D1B2A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="General Practitioner | Galle"
+            android:textColor="#0D1B2A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Sun and Sat - 4:00 PM"
+            android:textColor="#0D1B2A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="LKR 1,500"
+            android:textColor="#0D1B2A"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/doctorCard3"
+        android:layout_width="226dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="8dp"
+        android:background="#CEDDE4"
+        android:backgroundTint="#E3F2FD"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/doctorCard2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/doctorCard2"
+        app:layout_constraintTop_toBottomOf="@+id/doctorCard2">
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Dr. Suresh Jathu"
+            android:textColor="#0D1B2A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Dermatologist | Kandy"
+            android:textColor="#0D1B2A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Tue and Fri - 6: 00 PM"
+            android:textColor="#0D1B2A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="LKR 3,000"
+            android:textColor="#0D1B2A"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/doctorCard4"
+        android:layout_width="226dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="8dp"
+        android:background="#2196F3"
+        android:backgroundTint="#E3F2FD"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/doctorCard3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/doctorCard3"
+        app:layout_constraintTop_toBottomOf="@+id/doctorCard3">
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Dr. Tharushi Silva"
+            android:textColor="#0D1B2A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Neurologist | Negombo"
+            android:textColor="#0D1B2A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Mon and Wed - 4:30 PM"
+            android:textColor="#0D1B2A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="LKR 3,500"
+            android:textColor="#0D1B2A"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/doctorCard5"
+        android:layout_width="226dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="8dp"
+        android:background="#D0D7DC"
+        android:backgroundTint="#E3F2FD"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/doctorCard4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/doctorCard4"
+        app:layout_constraintTop_toBottomOf="@+id/doctorCard4">
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Dr. Nimesh Singa"
+            android:textColor="#0D1B2A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Pediatrician | Colombo"
+            android:textColor="#0D1B2A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Tue and Sun - 5: 00PM"
+            android:textColor="#0D1B2A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="LKR 2,500"
+            android:textColor="#0D1B2A"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBookDoctor2"
+        android:layout_width="115dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:backgroundTint="#1976D2"
+        android:fontFamily="serif"
+        android:text="BOOK"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="30px"
+        app:layout_constraintBottom_toBottomOf="@+id/doctorCard2"
+        app:layout_constraintStart_toEndOf="@+id/doctorCard2"
+        app:layout_constraintTop_toTopOf="@+id/doctorCard2"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <Button
+        android:id="@+id/btnBookDoctor3"
+        android:layout_width="115dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:backgroundTint="#1976D2"
+        android:fontFamily="serif"
+        android:text="BOOK"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="30px"
+        app:layout_constraintBottom_toBottomOf="@+id/doctorCard3"
+        app:layout_constraintStart_toEndOf="@+id/doctorCard3"
+        app:layout_constraintTop_toTopOf="@+id/doctorCard3" />
+
+    <Button
+        android:id="@+id/btnBookDoctor4"
+        android:layout_width="115dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:backgroundTint="#1976D2"
+        android:fontFamily="serif"
+        android:text="BOOK"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="30px"
+        app:layout_constraintBottom_toBottomOf="@+id/doctorCard4"
+        app:layout_constraintStart_toEndOf="@+id/doctorCard4"
+        app:layout_constraintTop_toTopOf="@+id/doctorCard4"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <Button
+        android:id="@+id/btnBookDoctor5"
+        android:layout_width="115dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:backgroundTint="#1976D2"
+        android:fontFamily="serif"
+        android:text="BOOK"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="30px"
+        app:layout_constraintBottom_toBottomOf="@+id/doctorCard5"
+        app:layout_constraintStart_toEndOf="@+id/doctorCard5"
+        app:layout_constraintTop_toTopOf="@+id/doctorCard5"
+        app:layout_constraintVertical_bias="0.527" />
+
+    <Button
+        android:id="@+id/btnBackToHome"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#E92214"
+        android:fontFamily="serif"
+        android:text="BACK TO HOME"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="30px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

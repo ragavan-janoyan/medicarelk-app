@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#471414"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/btnMyBookings"
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#1976D2"
+        android:fontFamily="serif"
+        android:text="MY BOOKINGS"
+        android:textSize="24sp"
+        app:cornerRadius="60px"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.239" />
+
+    <Button
+        android:id="@+id/btnHealthandTips"
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#1976D2"
+        android:fontFamily="serif"
+        android:text="HEALTH AND TIPS"
+        android:textSize="24sp"
+        app:cornerRadius="60px"
+        app:layout_constraintEnd_toEndOf="@+id/btnMyBookings"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnMyBookings"
+        app:layout_constraintTop_toBottomOf="@+id/btnMyBookings" />
+
+    <Button
+        android:id="@+id/btnHospitals"
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#1976D2"
+        android:fontFamily="serif"
+        android:text="HOSPITALS"
+        android:textSize="24sp"
+        app:cornerRadius="60px"
+        app:layout_constraintEnd_toEndOf="@+id/btnHealthandTips"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnHealthandTips"
+        app:layout_constraintTop_toBottomOf="@+id/btnHealthandTips" />
+
+    <Button
+        android:id="@+id/btnFAQs"
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#1976D2"
+        android:fontFamily="serif"
+        android:text="FAQs"
+        android:textSize="24sp"
+        app:cornerRadius="65px"
+        app:layout_constraintEnd_toEndOf="@+id/btnHospitals"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnHospitals"
+        app:layout_constraintTop_toBottomOf="@+id/btnHospitals" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="411dp"
+        android:layout_height="70dp"
+        android:background="#F8F7F7"
+        android:backgroundTint="#1976D2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/tvHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="HOME"
+            android:textColor="#FAFBFB"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDoctors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:fontFamily="serif"
+            android:text="DOCTORS"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvHome"
+            app:layout_constraintStart_toEndOf="@+id/tvHome"
+            app:layout_constraintTop_toTopOf="@+id/tvHome"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvAlerts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:fontFamily="serif"
+            android:text="ALERTS"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDoctors"
+            app:layout_constraintStart_toEndOf="@+id/tvDoctors"
+            app:layout_constraintTop_toTopOf="@+id/tvDoctors"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="serif"
+            android:text="PROFILE"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAlerts"
+            app:layout_constraintStart_toEndOf="@+id/tvAlerts"
+            app:layout_constraintTop_toTopOf="@+id/tvAlerts"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="381dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="serif"
+        android:text="How can we help you?"
+        android:textAlignment="center"
+        android:textColor="#1976D2"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="411dp"
+        android:layout_height="48dp"
+        android:fontFamily="serif"
+        android:text="Welcome To MedicareLK"
+        android:textAlignment="center"
+        android:textColor="#1976D2"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
