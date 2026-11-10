@@ -73,7 +73,7 @@ MedicareLK/
 
 1. Clone this repository.
 
-git clone https://github.com/ragavan-janoyan/medicarelk-android-app.git
+git clone https://github.com/ragavan-janoyan/medicarelk-app.git
 
 2. Open Android Studio.
 3. Select Open and choose the downloaded MedicareLK project folder.
